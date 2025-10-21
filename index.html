@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammin n' Manhattan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #E5B25D;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #523A34;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #523A34;
+            font-size: 1.1em;
+        }
+
+        .gallery {
+            column-count: 4;
+            column-gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #F2DD6E;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            break-inside: avoid;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            display: block;
+            background: #e0e0e0;
+            min-height: 200px;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #523A34;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            color: #523A34;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1200px) {
+            .gallery {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                column-count: 1;
+            }
+        }
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        text-decoration: none;
+        background-color: #523A34;
+        color: #E5B25D;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        z-index: 1000;
+    }
+    .back-button:hover {
+        background-color: #B87D4B;
+    }
+    </style>
+</head>
+<body>
+   <a href="https://cortn292.github.io/c1i/" class="back-button">← Back to Home</a>
+  
+    <header>
+        <h1>Part Four</h1>
+        <p class="subtitle">Getting Bored yet?</p>
+    </header>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/ca/Doja_Cat_-_Jealous_Type.png" class="Doja">
+            <div class="card-content">
+                <h3 class="card-title">Song of the Day</h3>
+                <p class="card-description">Jealous Type By Doja Cat</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430264182820962374/IMG_1241.jpg?ex=68f924d2&is=68f7d352&hm=4e873747c4112d96717c07a6a4ec9d458284163f81b51ba15bdfedaa6ca403cb&=&format=webp&width=1308&height=1744" alt="Crinkle" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">The Fit</h3>
+                <p class="card-description">On my way to the bathroom I felt like taking a picture.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430264270846689420/IMG_1307.jpg?ex=68f924e7&is=68f7d367&hm=090eddec49ce7b218af58db9722c18c254686d9e8490abb71d81437d23ed29b2&=&format=webp&width=1308&height=1744" alt="Moth" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">NYC Core</h3>
+                <p class="card-description">I see at least 3 rats a day when I commute, I personally think they're adorable.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430264247358718003/IMG_1290.jpg?ex=68f924e1&is=68f7d361&hm=7de017ee99b5a0641578f6bbdaa4f5890c887fea87067574899a5b5f88208f90&=&format=webp&width=500&height=400">
+            <div class="card-content">
+                <h3 class="card-title">Another Fit</h3>
+                <p class="card-description">I was on my way to work, it was actually cold... I hate this weather.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430264280577478897/IMG_1304.jpg?ex=68f924e9&is=68f7d369&hm=15c3dd9039b27150e5d0aedf054b0bbd3b92a0c71dd843db1b3c2d99c5cb67a3&=&format=webp&width=1308&height=1744" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">The Beginning</h3>
+                <p class="card-description">This is the start of my "Design Wall" where I just stick stuff I've designed onto my wall.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430264300664000666/IMG_1318.png?ex=68f924ee&is=68f7d36e&hm=2f555ae2d4f86b7b10a01ed8c922005eb3390e049c7894cb8502a7b7c74cda09&=&format=webp&quality=lossless&width=1872&height=1650" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Can you tell I love this game?</h3>
+                <p class="card-description">"Yessss... This house is perfect..." Fucking Creep</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430264319958061066/Untitled600_20251014205403.png?ex=68f924f2&is=68f7d372&hm=1656681b9185137de17447b79797f5320b370632bb996cb4fe650332cc5fb81b&=&format=webp&quality=lossless&width=1744&height=1744" alt="Lake view" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Bored Again</h3>
+                <p class="card-description">I decided to draw this and try to scare my friends because I can.</p>
+            </div>
+        </div>
